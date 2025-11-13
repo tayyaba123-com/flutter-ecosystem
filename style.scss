@@ -1,0 +1,633 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+
+}
+
+@mixin flex-column($gap){
+     display: flex;
+     flex-direction: column;
+     gap:$gap;
+}
+
+main{
+    // overflow: hidden;
+    @include flex-column(1rem);
+     width:100%;
+     align-items: center;
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     
+
+    section.veiw1{
+         @include flex-column(5rem);
+        align-items: center;
+        width: 100%;
+        text-align: center;
+        background:linear-gradient( white,rgb(253, 240, 240),rgb(250, 210, 216));
+        padding: 3rem 1rem;
+  
+        .top{           
+            @include flex-column(3rem);
+            width: 100%;
+            padding:1.8rem;
+            align-items: center;
+         
+
+            .img{
+                width: 100%;
+
+                 img{
+                 width:clamp(200px,100%,700px)
+                }
+
+            }        
+            
+            h2{
+                font-size:clamp(2.8rem,4vw,3rem);
+                font-weight: bolder;
+                line-height: 2.9rem;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                max-width: 500px;
+                
+            }
+        }
+
+        .bottom{
+
+            width: 100%;
+
+            p{
+                padding: 1.0rem;
+                font-size: 2.2rem;
+                font-weight:200;
+                line-height: 2.6rem;
+            }
+
+        }
+        
+    }
+
+    section.veiw2{
+        @include flex-column(1.6rem);
+        width: 100%;
+        padding: 2rem 1.3rem;
+
+        .community,.events,.pakages{
+            @include flex-column(2rem);
+            width: 100%;
+             border-top: 0.2rem solid rgb(207, 204, 204);
+             padding: 1.3rem 0rem;
+           
+
+            .top{
+                 
+                @include flex-column(1rem);
+
+                h3{
+                    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                    font-size: 1.9rem;
+                }
+
+                p{
+                    color: rgb(90, 89, 89);
+                    font-size: 1.3rem;
+                }
+            }
+
+            .bottom{
+                max-width: 550px;
+
+                img{
+                    padding: 1rem;
+                    width: 100%;
+                    
+                }
+            }
+        }
+
+
+    }
+
+    section.veiw3{
+        max-width: 1200px;
+        padding: 2rem 2rem;
+        width: 100%;
+        @include flex-column(1.6rem);
+
+
+        .top{
+           max-width: 550px;
+
+           img{
+            width: 100%;
+            
+           }
+        }
+
+        .bottom{
+            width: 100%;
+            @include flex-column(1.6rem);
+            align-items: start;
+
+            .discription{
+                text-align: left;
+                @include flex-column(1.4rem);
+                justify-content: space-between;
+                
+                h4{
+                    // font-weight: 100;
+                    font-size: 1.4rem;
+                     color: rgb(83, 80, 80)
+                }
+
+                h2{
+                    font-size: 3.3rem;
+                    font-weight: bolder;
+                }
+
+                p{
+                    font-size: 1.4rem;
+                    width: 93%;
+                }
+
+              
+            }
+
+            .buttons{
+                @include flex-column(1rem);
+
+                >button{
+                    width: fit-content;
+                    padding: .6rem 1.8rem;
+                    background-color: rgb(248, 251, 253);
+                    font-size: 1.1rem;
+                    color: blue;
+                    border:  1px solid blue;
+                    border-radius: 1.6rem;
+                }
+
+                .button2Box{
+                    @include flex-column(.8rem);
+                    flex-direction: row;
+                    align-items: center;
+
+                    button{
+                        background-color: transparent;
+                        width: fit-content;
+                        padding: 1rem 0rem;
+                        border: none;
+                        font-size: 1.1rem;
+                        font-weight: 600;
+                        color: black;
+                    }
+                }
+
+            }
+
+        }
+
+        
+    }
+
+    section.veiw4, section.veiw5,section.veiw6{
+        padding: 2.4rem 2rem;
+        width: 100%;
+        @include flex-column(2.4rem);
+        background: linear-gradient(to bottom,rgb(245, 251, 252),rgba(251, 247, 222, 0.87),rgba(244, 237, 185, 0.87));
+
+        .top{
+            // width: 100%;
+            max-width: 550px;
+
+            img{
+                width: 100%;
+            }
+        }
+
+        .bottom{
+            @include flex-column(1.3rem);
+            width: 100%;
+            text-align: left;
+            >p{
+                font-size: 1.3rem;
+                font-weight: bolder;
+                color: rgb(95, 82, 67)
+            }
+
+            .dscription{
+                @include flex-column(1.4rem);
+
+                h2{
+                    font-size: 3.1rem;
+                    font-weight: bold;
+                    line-height: 3.3rem;
+                }
+
+                p{
+                    font-size: 1.4rem;
+                    width: 96%;
+                    line-height: 1.7rem;
+                    color: rgb(74, 64, 48);
+                }
+            }
+
+            button{
+                width: fit-content;
+                padding: 0.7rem  2rem;
+                color: white;
+                background-color: rgb(87, 87, 244);
+                font-weight: bold;
+                border: none;
+                // width: 100%;
+                font-size: 0.9rem;
+                border-radius: 2rem;
+            }
+        }
+
+    }
+
+    //extra work->not similer to section 4
+    section.veiw5{
+        background:transparent;
+        .bottom{
+            button{
+                 background-color: transparent;
+                 color: blue;
+                 font-weight: 600;
+                 border: 1px solid blue;
+            }
+        }
+    }
+
+    section.veiw7{
+        @include flex-column(1rem);
+        align-items: center;
+        padding: 2.7rem 1.4rem;
+        width: 100%;      
+
+        .container{
+        width: 100%;
+         @include flex-column(2rem);
+        background-image: url("/veiw7.png");
+        
+        color: white;
+        background-position: top;
+        border-radius: 2rem;
+        background-size: cover;
+        background-color: rgb(7, 7, 66);
+        padding: 5rem 3rem;
+
+           h2{
+          font-size: 2.5rem;
+
+        }
+
+        p{
+            font-weight: 600;
+            font-size: 1.2rem;
+        }
+        
+        .buttons{
+            @include flex-column(1rem);
+            align-items: start;
+
+            .button1{
+                background-color: aliceblue;
+                color: rgb(82, 82, 174);
+                width: fit-content;
+                padding: 0.6rem 2rem;
+                font-size: 1.0rem;
+                border-radius: 1.8rem;
+                font-weight: bold;
+            }
+
+            .button2{
+                background-color: transparent;
+                @include flex-column(0.4rem);
+                align-items: center;
+                flex-direction: row;
+                color: white;
+                border: none;
+             
+
+                p{
+                      font-size: 0.9rem;
+                }
+            }
+        }
+        
+        }
+     
+
+
+        }
+
+    }
+
+
+
+
+@media (min-width:960px) {
+    main{
+        section.veiw1{            
+              background:linear-gradient( to right, rgb(250, 230, 233),rgb(253, 240, 240)
+              ,rgb(254, 245, 246),);
+      
+
+            .top,.bottom{
+               
+                max-width: 1100px;
+            }
+
+            .top{
+                flex-direction: row-reverse;
+
+                h2{
+                    padding:1rem;
+                    text-align: left;
+                    font-size: 3.7rem;
+                    line-height: 4rem;
+                }
+               
+                
+            }
+
+            .bottom {
+                padding: 3rem;
+
+                p{
+                    font-size: 2.6rem;
+                    line-height: 3rem;
+                }
+            }
+
+        }
+
+
+        section.veiw2{
+            flex-direction: row;
+            max-width: 1200px;
+            gap:3rem;
+           
+            .community,.events,.pakages{
+                gap:3rem;            
+            .top{
+
+                gap:1.3rem;
+
+                p{
+                    width: 90%;
+                }
+            }
+
+            .bottom{
+                
+                img{
+                   padding: none;
+                }
+            }
+             
+            }
+        }
+
+        section.veiw3{
+            flex-direction: row-reverse;
+            gap: 3rem;
+            align-items: center;
+            
+            .top,.bottom{
+                width: 50%;
+            }
+
+            .top{
+                img{
+                    padding: 1rem;
+                }
+            }
+
+            .bottom{
+                align-items: start;
+                gap: 3.1rem;
+
+                .discription{
+
+                    p{
+                        line-height: 1.8rem;
+                    }
+                    h2{
+                        font-size: 4rem;
+                    }
+
+                }
+                    .buttons{
+                        flex-direction: row;
+                        gap: 1.4rem;
+
+                        .button2Box{
+                            gap: 1.1rem;
+
+                            bottom{
+                               font-size: 1.5rem;
+                            }
+
+                            i{
+                                font-size: 1.3rem;
+                            }
+                        }
+                    }
+                
+            }
+        }
+
+        section.veiw4,section.veiw5,section.veiw6{
+            align-items: center;
+            justify-content: center;
+            flex-direction: row;
+             background: linear-gradient(to left,rgb(245, 251, 252),rgba(249, 246, 228, 0.87),rgba(248, 244, 215, 0.87));
+
+             .top,.bottom{
+                max-width:590px;
+                gap: 3rem;
+              
+             }
+
+             .top{
+               
+                img{
+                     padding: 4rem;
+                }
+             }
+
+             .bottom{
+
+
+                >p{
+                    font-size: 1.3rem;
+                }
+                gap: 2rem;
+
+                .dscription{
+                    h2{
+                        font-size: 3.7rem;
+                        line-height: 3.6rem;
+                    }
+
+                    p{
+                        font-size: 1.4rem;
+                        width: 90%;
+                        line-height: 2.1rem;
+                    }
+                }
+
+                button{
+                    font-size: 1.0rem;
+                    padding: 1.1rem 1.5rem;
+                }
+             }
+        
+        }
+
+        section.veiw5{
+            background:transparent;
+            flex-direction: row-reverse;
+            .bottom{
+                .dscription{
+                    h2{
+                        width: 80%;
+                        line-height: 4.5rem;
+                    }
+                }
+            }
+        }
+
+        section.veiw7{
+            align-items: center;
+            .container{
+                max-width: 1200px;
+
+                background-size: 54% ;
+                background-repeat: no-repeat;
+                background-position: right center;
+                gap:1.5rem;
+                padding: 4rem 5rem;
+
+                h2{
+                    font-size: 4rem;
+                }
+
+                .buttons{
+                    flex-direction: row;
+                    align-items: center;
+                }
+
+            }
+        }
+    }
+    
+}
+
+@media (min-width:600px) and (max-width:920px){
+    main{
+        section.veiw3{
+            .bottom{
+                // gap:1rem;
+                .buttons{
+                    gap: 3rem;
+                    >button{
+                        padding: 1rem 1.4rem;
+                        font-size: 1.1rem;
+                    }
+
+                     flex-direction: row;
+                }
+            }
+        }
+
+        section.veiw4,section.veiw5{
+            .bottom{
+                .dscription{
+                    p{
+                        width: 90%;
+                    }
+                }
+            }
+        }
+    }
+    
+}
+
+@media (min-width:960px) and (max-width:1100px) {
+    main{
+        section.veiw3{
+            .bottom{
+                .buttons{
+                     flex-direction: column;
+                     >button{
+                        padding: 0.6rem 2rem;
+                     }
+
+                     .button2Box{
+                        button{
+                            font-size: 1rem;
+                        }
+                     }
+                }
+            }
+        }
+
+       
+
+    }
+}
+
+@media (min-width:960px) and (max-width:1200px) {
+    main{
+        section.veiw4,section.veiw6{
+            gap:6rem;
+            .top{
+
+                img{
+                   padding: 0px;
+                }
+                
+            }
+
+            .bottom{
+                .dscription{
+                    h2{
+                        font-size: 3.4rem;
+                    }
+
+                    p{
+                        font-size: 1.4;
+                    }
+                }
+
+                button{
+                    font: 1.2rem;
+                }
+            }
+
+        }
+
+         section.veiw5{
+            padding: 2rem 4rem;
+
+            .bottom{
+                .dscription{
+                    h2{
+                        width: 80%;
+                    }
+                }
+            }
+        }
+
+    
+    }
+}

@@ -1,0 +1,466 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+  align-items: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+main section.veiw1 {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  align-items: center;
+  width: 100%;
+  text-align: center;
+  background: linear-gradient(white, rgb(253, 240, 240), rgb(250, 210, 216));
+  padding: 3rem 1rem;
+}
+main section.veiw1 .top {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  width: 100%;
+  padding: 1.8rem;
+  align-items: center;
+}
+main section.veiw1 .top .img {
+  width: 100%;
+}
+main section.veiw1 .top .img img {
+  width: clamp(200px, 100%, 700px);
+}
+main section.veiw1 .top h2 {
+  font-size: clamp(2.8rem, 4vw, 3rem);
+  font-weight: bolder;
+  line-height: 2.9rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  max-width: 500px;
+}
+main section.veiw1 .bottom {
+  width: 100%;
+}
+main section.veiw1 .bottom p {
+  padding: 1rem;
+  font-size: 2.2rem;
+  font-weight: 200;
+  line-height: 2.6rem;
+}
+main section.veiw2 {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  width: 100%;
+  padding: 2rem 1.3rem;
+}
+main section.veiw2 .community, main section.veiw2 .events, main section.veiw2 .pakages {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 100%;
+  border-top: 0.2rem solid rgb(207, 204, 204);
+  padding: 1.3rem 0rem;
+}
+main section.veiw2 .community .top, main section.veiw2 .events .top, main section.veiw2 .pakages .top {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+main section.veiw2 .community .top h3, main section.veiw2 .events .top h3, main section.veiw2 .pakages .top h3 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.9rem;
+}
+main section.veiw2 .community .top p, main section.veiw2 .events .top p, main section.veiw2 .pakages .top p {
+  color: rgb(90, 89, 89);
+  font-size: 1.3rem;
+}
+main section.veiw2 .community .bottom, main section.veiw2 .events .bottom, main section.veiw2 .pakages .bottom {
+  max-width: 550px;
+}
+main section.veiw2 .community .bottom img, main section.veiw2 .events .bottom img, main section.veiw2 .pakages .bottom img {
+  padding: 1rem;
+  width: 100%;
+}
+main section.veiw3 {
+  max-width: 1200px;
+  padding: 2rem 2rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+main section.veiw3 .top {
+  max-width: 550px;
+}
+main section.veiw3 .top img {
+  width: 100%;
+}
+main section.veiw3 .bottom {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  align-items: start;
+}
+main section.veiw3 .bottom .discription {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+  justify-content: space-between;
+}
+main section.veiw3 .bottom .discription h4 {
+  font-size: 1.4rem;
+  color: rgb(83, 80, 80);
+}
+main section.veiw3 .bottom .discription h2 {
+  font-size: 3.3rem;
+  font-weight: bolder;
+}
+main section.veiw3 .bottom .discription p {
+  font-size: 1.4rem;
+  width: 93%;
+}
+main section.veiw3 .bottom .buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+main section.veiw3 .bottom .buttons > button {
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 0.6rem 1.8rem;
+  background-color: rgb(248, 251, 253);
+  font-size: 1.1rem;
+  color: blue;
+  border: 1px solid blue;
+  border-radius: 1.6rem;
+}
+main section.veiw3 .bottom .buttons .button2Box {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  flex-direction: row;
+  align-items: center;
+}
+main section.veiw3 .bottom .buttons .button2Box button {
+  background-color: transparent;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 1rem 0rem;
+  border: none;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: black;
+}
+main section.veiw4, main section.veiw5, main section.veiw6 {
+  padding: 2.4rem 2rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+  background: linear-gradient(to bottom, rgb(245, 251, 252), rgba(251, 247, 222, 0.87), rgba(244, 237, 185, 0.87));
+}
+main section.veiw4 .top, main section.veiw5 .top, main section.veiw6 .top {
+  max-width: 550px;
+}
+main section.veiw4 .top img, main section.veiw5 .top img, main section.veiw6 .top img {
+  width: 100%;
+}
+main section.veiw4 .bottom, main section.veiw5 .bottom, main section.veiw6 .bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 1.3rem;
+  width: 100%;
+  text-align: left;
+}
+main section.veiw4 .bottom > p, main section.veiw5 .bottom > p, main section.veiw6 .bottom > p {
+  font-size: 1.3rem;
+  font-weight: bolder;
+  color: rgb(95, 82, 67);
+}
+main section.veiw4 .bottom .dscription, main section.veiw5 .bottom .dscription, main section.veiw6 .bottom .dscription {
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+}
+main section.veiw4 .bottom .dscription h2, main section.veiw5 .bottom .dscription h2, main section.veiw6 .bottom .dscription h2 {
+  font-size: 3.1rem;
+  font-weight: bold;
+  line-height: 3.3rem;
+}
+main section.veiw4 .bottom .dscription p, main section.veiw5 .bottom .dscription p, main section.veiw6 .bottom .dscription p {
+  font-size: 1.4rem;
+  width: 96%;
+  line-height: 1.7rem;
+  color: rgb(74, 64, 48);
+}
+main section.veiw4 .bottom button, main section.veiw5 .bottom button, main section.veiw6 .bottom button {
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 0.7rem 2rem;
+  color: white;
+  background-color: rgb(87, 87, 244);
+  font-weight: bold;
+  border: none;
+  font-size: 0.9rem;
+  border-radius: 2rem;
+}
+main section.veiw5 {
+  background: transparent;
+}
+main section.veiw5 .bottom button {
+  background-color: transparent;
+  color: blue;
+  font-weight: 600;
+  border: 1px solid blue;
+}
+main section.veiw7 {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  padding: 2.7rem 1.4rem;
+  width: 100%;
+}
+main section.veiw7 .container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  background-image: url("/veiw7.png");
+  color: white;
+  background-position: top;
+  border-radius: 2rem;
+  background-size: cover;
+  background-color: rgb(7, 7, 66);
+  padding: 5rem 3rem;
+}
+main section.veiw7 .container h2 {
+  font-size: 2.5rem;
+}
+main section.veiw7 .container p {
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+main section.veiw7 .container .buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: start;
+}
+main section.veiw7 .container .buttons .button1 {
+  background-color: aliceblue;
+  color: rgb(82, 82, 174);
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 0.6rem 2rem;
+  font-size: 1rem;
+  border-radius: 1.8rem;
+  font-weight: bold;
+}
+main section.veiw7 .container .buttons .button2 {
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  align-items: center;
+  flex-direction: row;
+  color: white;
+  border: none;
+}
+main section.veiw7 .container .buttons .button2 p {
+  font-size: 0.9rem;
+}
+
+@media (min-width: 960px) {
+  main section.veiw1 {
+    background: linear-gradient(to right, rgb(250, 230, 233), rgb(253, 240, 240), rgb(254, 245, 246));
+  }
+  main section.veiw1 .top, main section.veiw1 .bottom {
+    max-width: 1100px;
+  }
+  main section.veiw1 .top {
+    flex-direction: row-reverse;
+  }
+  main section.veiw1 .top h2 {
+    padding: 1rem;
+    text-align: left;
+    font-size: 3.7rem;
+    line-height: 4rem;
+  }
+  main section.veiw1 .bottom {
+    padding: 3rem;
+  }
+  main section.veiw1 .bottom p {
+    font-size: 2.6rem;
+    line-height: 3rem;
+  }
+  main section.veiw2 {
+    flex-direction: row;
+    max-width: 1200px;
+    gap: 3rem;
+  }
+  main section.veiw2 .community, main section.veiw2 .events, main section.veiw2 .pakages {
+    gap: 3rem;
+  }
+  main section.veiw2 .community .top, main section.veiw2 .events .top, main section.veiw2 .pakages .top {
+    gap: 1.3rem;
+  }
+  main section.veiw2 .community .top p, main section.veiw2 .events .top p, main section.veiw2 .pakages .top p {
+    width: 90%;
+  }
+  main section.veiw2 .community .bottom img, main section.veiw2 .events .bottom img, main section.veiw2 .pakages .bottom img {
+    padding: none;
+  }
+  main section.veiw3 {
+    flex-direction: row-reverse;
+    gap: 3rem;
+    align-items: center;
+  }
+  main section.veiw3 .top, main section.veiw3 .bottom {
+    width: 50%;
+  }
+  main section.veiw3 .top img {
+    padding: 1rem;
+  }
+  main section.veiw3 .bottom {
+    align-items: start;
+    gap: 3.1rem;
+  }
+  main section.veiw3 .bottom .discription p {
+    line-height: 1.8rem;
+  }
+  main section.veiw3 .bottom .discription h2 {
+    font-size: 4rem;
+  }
+  main section.veiw3 .bottom .buttons {
+    flex-direction: row;
+    gap: 1.4rem;
+  }
+  main section.veiw3 .bottom .buttons .button2Box {
+    gap: 1.1rem;
+  }
+  main section.veiw3 .bottom .buttons .button2Box bottom {
+    font-size: 1.5rem;
+  }
+  main section.veiw3 .bottom .buttons .button2Box i {
+    font-size: 1.3rem;
+  }
+  main section.veiw4, main section.veiw5, main section.veiw6 {
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    background: linear-gradient(to left, rgb(245, 251, 252), rgba(249, 246, 228, 0.87), rgba(248, 244, 215, 0.87));
+  }
+  main section.veiw4 .top, main section.veiw4 .bottom, main section.veiw5 .top, main section.veiw5 .bottom, main section.veiw6 .top, main section.veiw6 .bottom {
+    max-width: 590px;
+    gap: 3rem;
+  }
+  main section.veiw4 .top img, main section.veiw5 .top img, main section.veiw6 .top img {
+    padding: 4rem;
+  }
+  main section.veiw4 .bottom, main section.veiw5 .bottom, main section.veiw6 .bottom {
+    gap: 2rem;
+  }
+  main section.veiw4 .bottom > p, main section.veiw5 .bottom > p, main section.veiw6 .bottom > p {
+    font-size: 1.3rem;
+  }
+  main section.veiw4 .bottom .dscription h2, main section.veiw5 .bottom .dscription h2, main section.veiw6 .bottom .dscription h2 {
+    font-size: 3.7rem;
+    line-height: 3.6rem;
+  }
+  main section.veiw4 .bottom .dscription p, main section.veiw5 .bottom .dscription p, main section.veiw6 .bottom .dscription p {
+    font-size: 1.4rem;
+    width: 90%;
+    line-height: 2.1rem;
+  }
+  main section.veiw4 .bottom button, main section.veiw5 .bottom button, main section.veiw6 .bottom button {
+    font-size: 1rem;
+    padding: 1.1rem 1.5rem;
+  }
+  main section.veiw5 {
+    background: transparent;
+    flex-direction: row-reverse;
+  }
+  main section.veiw5 .bottom .dscription h2 {
+    width: 80%;
+    line-height: 4.5rem;
+  }
+  main section.veiw7 {
+    align-items: center;
+  }
+  main section.veiw7 .container {
+    max-width: 1200px;
+    background-size: 54%;
+    background-repeat: no-repeat;
+    background-position: right center;
+    gap: 1.5rem;
+    padding: 4rem 5rem;
+  }
+  main section.veiw7 .container h2 {
+    font-size: 4rem;
+  }
+  main section.veiw7 .container .buttons {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+@media (min-width: 600px) and (max-width: 920px) {
+  main section.veiw3 .bottom .buttons {
+    gap: 3rem;
+    flex-direction: row;
+  }
+  main section.veiw3 .bottom .buttons > button {
+    padding: 1rem 1.4rem;
+    font-size: 1.1rem;
+  }
+  main section.veiw4 .bottom .dscription p, main section.veiw5 .bottom .dscription p {
+    width: 90%;
+  }
+}
+@media (min-width: 960px) and (max-width: 1100px) {
+  main section.veiw3 .bottom .buttons {
+    flex-direction: column;
+  }
+  main section.veiw3 .bottom .buttons > button {
+    padding: 0.6rem 2rem;
+  }
+  main section.veiw3 .bottom .buttons .button2Box button {
+    font-size: 1rem;
+  }
+}
+@media (min-width: 960px) and (max-width: 1200px) {
+  main section.veiw4, main section.veiw6 {
+    gap: 6rem;
+  }
+  main section.veiw4 .top img, main section.veiw6 .top img {
+    padding: 0px;
+  }
+  main section.veiw4 .bottom .dscription h2, main section.veiw6 .bottom .dscription h2 {
+    font-size: 3.4rem;
+  }
+  main section.veiw4 .bottom .dscription p, main section.veiw6 .bottom .dscription p {
+    font-size: 1.4;
+  }
+  main section.veiw4 .bottom button, main section.veiw6 .bottom button {
+    font: 1.2rem;
+  }
+  main section.veiw5 {
+    padding: 2rem 4rem;
+  }
+  main section.veiw5 .bottom .dscription h2 {
+    width: 80%;
+  }
+}/*# sourceMappingURL=style.css.map */
