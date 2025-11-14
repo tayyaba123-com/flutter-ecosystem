@@ -239,7 +239,7 @@ main section.veiw7 .container {
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  background-image: url("/veiw7.png");
+  background-image: url("veiw7.png");
   color: white;
   background-position: top;
   border-radius: 2rem;
